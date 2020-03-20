@@ -35,7 +35,7 @@ func main() {
 		}
 
 		fmt.Println("--------")
-		fmt.Printf("template sring is %s\n", t.templateStr)
+		fmt.Printf("template sring is '%s'\n", t.templateStr)
 		err = tmpl.Execute(os.Stdout, t.data)
 		fmt.Println("\n--------")
 		if err != nil {
